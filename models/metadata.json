@@ -1,0 +1,73 @@
+{
+  "best_model_name": "Logistic Regression",
+  "feature_cols": [
+    "job_satisfaction",
+    "monthly_income",
+    "tenure_years",
+    "performance_rating",
+    "weekly_hours",
+    "promotions_last_5yrs",
+    "department_encoded",
+    "work_life_balance",
+    "manager_support",
+    "commute_distance",
+    "training_last_year",
+    "num_projects"
+  ],
+  "departments": [
+    "Engineering",
+    "Finance",
+    "HR",
+    "IT",
+    "Marketing",
+    "Operations",
+    "Sales"
+  ],
+  "model_results": {
+    "Random Forest": {
+      "accuracy": 85.0,
+      "auc_roc": 90.55,
+      "cv_mean": 91.13,
+      "cv_std": 1.03
+    },
+    "Gradient Boosting": {
+      "accuracy": 86.75,
+      "auc_roc": 91.53,
+      "cv_mean": 91.48,
+      "cv_std": 0.59
+    },
+    "Logistic Regression": {
+      "accuracy": 86.25,
+      "auc_roc": 92.2,
+      "cv_mean": 92.74,
+      "cv_std": 0.92
+    },
+    "Decision Tree": {
+      "accuracy": 80.75,
+      "auc_roc": 79.43,
+      "cv_mean": 79.96,
+      "cv_std": 1.98
+    },
+    "SVM": {
+      "accuracy": 86.25,
+      "auc_roc": 90.21,
+      "cv_mean": 91.38,
+      "cv_std": 0.95
+    }
+  },
+  "feature_importance": {
+    "job_satisfaction": 0.24954677672267106,
+    "monthly_income": 0.08447557191116592,
+    "tenure_years": 0.06445973446171924,
+    "performance_rating": 0.034620789071733805,
+    "weekly_hours": 0.08523212030747836,
+    "promotions_last_5yrs": 0.044284886272999195,
+    "department_encoded": 0.043825828983547505,
+    "work_life_balance": 0.18705540746564156,
+    "manager_support": 0.05694399428119177,
+    "commute_distance": 0.0680720714159599,
+    "training_last_year": 0.03715508152078562,
+    "num_projects": 0.04432773758510599
+  },
+  "attrition_rate": 23.0
+}
